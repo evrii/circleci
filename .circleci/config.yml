@@ -51,10 +51,10 @@ workflows:
           requires:
             - test
       - otherApproval:
-	  type: approval
-	  requires:
-	    -test
+          type: approval
+          requires:
+            - test
       - deploy:
           requires:
             - businessApproval
-	    - otherApproval
+            - otherApproval
