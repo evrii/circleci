@@ -46,7 +46,7 @@ workflows:
       - test:
           requires:
             - stage
-      - hold:
+      - holdA:
           type: approval
           requires:
             - test
