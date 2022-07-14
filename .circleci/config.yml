@@ -35,7 +35,7 @@ jobs:
       - checkout
       - heroku/install
       - heroku/deploy-via-git:
-          app-name: $HEROKU_PRODUCTION_APP_NAME
+          app-name: $HEROKU_STAGING_APP_NAME
 orbs:
   heroku: circleci/heroku@0.0.10
 version: 2.1
