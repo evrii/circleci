@@ -46,10 +46,15 @@ workflows:
       - test:
           requires:
             - stage
-      - holdA:
+      - bussinessApproval:
           type: approval
           requires:
             - test
+      - otherApproval:
+	  type: approval
+	  requires:
+	    -test
       - deploy:
           requires:
-            - holdA
+            - businessApproval
+	    - otherApproval
