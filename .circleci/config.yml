@@ -46,7 +46,7 @@ workflows:
       - test:
           requires:
             - stage
-      - bussinessApproval:
+      - businessApproval:
           type: approval
           requires:
             - test
