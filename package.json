@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx nodemon ./server",
     "start": "node ./server",
-    "test": "npx newman run https://www.getpostman.com/collections/2c784084fdfabf605603 -e ./Users.postman_collection.json"
+    "test": "npx newman run https://www.getpostman.com/collections/2c784084fdfabf605603 -e ./staging.postman_environment.json"
   },
   "keywords": [],
   "author": "",
