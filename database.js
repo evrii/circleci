@@ -4,6 +4,7 @@ const data = require("./data");
 
 let database = null;
 
+
 const mongo = new MongoMemoryServer();
 
 async function startDatabase() {
